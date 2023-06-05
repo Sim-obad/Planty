@@ -1,0 +1,7 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 192.168.1.9. Set the 'ServerName' directive globally to suppress this message
+[Tue May 30 16:03:26.995901 2023] [mpm_event:notice] [pid 57111:tid 8596284032] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Tue May 30 16:03:26.996189 2023] [core:notice] [pid 57111:tid 8596284032] AH00094: Command line: '/Users/simon/Library/Application Support/Local/lightning-services/apache-2.4.43+8/bin/darwin/bin/httpd -D FOREGROUND -f /Users/simon/Library/Application Support/Local/run/kqO3mNEzR/conf/apache/apache2.conf'
+[Thu Jun 01 21:43:12.180571 2023] [mpm_event:notice] [pid 57111:tid 8596284032] AH00491: caught SIGTERM, shutting down
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using MacBook-Pro-de-Simon.local. Set the 'ServerName' directive globally to suppress this message
+[Sat Jun 03 13:32:51.572322 2023] [mpm_event:notice] [pid 3285:tid 8638898816] AH00489: Apache/2.4.43 (Unix) configured -- resuming normal operations
+[Sat Jun 03 13:32:51.572872 2023] [core:notice] [pid 3285:tid 8638898816] AH00094: Command line: '/Users/simon/Library/Application Support/Local/lightning-services/apache-2.4.43+8/bin/darwin/bin/httpd -D FOREGROUND -f /Users/simon/Library/Application Support/Local/run/kqO3mNEzR/conf/apache/apache2.conf'
