@@ -10,3 +10,291 @@ Version: 3.4.4.1685434235
 Updated: 2023-05-30 08:10:35
 
 */
+
+:root {
+  --primary: #dc9f96;
+  --secondary: #3b8e46;
+  --text-dark: #000000;
+  --text-light: #ffffff;
+  --hover: #c02e44;
+  --box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+/* En-tête */
+.wpr-nav-menu{
+	display:flex;
+	padding-right: none;
+	margin: none;
+	justify-content: flex-end;
+	height:85px;
+	text-align: center;
+}
+
+.menu-commander {
+	background: #DC9F96;
+}
+
+
+.menu-commander:hover {
+	background: #C02E44;
+}
+
+.menu-rencontrer {
+	order: 1 ;
+	margin-right: 50px;
+}
+.menu-commander {
+	order: 3 ;
+}
+.admin-menu{
+	order: 2;
+	padding-top: 33px;
+	align-items: center;
+}
+
+.menu-commander a {
+	color: #FFF ;
+}
+
+/* Contact */
+
+.envoyer{
+	display:flex;
+	flex-direction: row;
+	margin-left: 120px;
+	padding 20px 55px 20px 55px;
+}
+/* Quantité */
+
+.quantity-form {
+    display: flex ;
+    justify-content: space-between;
+	padding-top: 15px;
+	padding-left: none;
+	
+  }
+  
+  .quantity-form input[type="submit"] {
+    height: 50px;
+    padding: 2rem 4rem;
+    line-height: 1rem;
+    margin: 0;
+	background: #E0B9B4;
+	border-radius: 5px;
+    transition: color;
+  }
+  
+  .quantity {
+    display: flex;
+	  padding-top:0px;
+	  margin-right:30px;
+	  margin-left:6px;
+  }
+  
+  .quantity span:hover {
+    background: var(--hover);
+  }
+  
+  .quantity input[type="number"] {
+    border: none;
+    width: 51px;
+    height: 56px;
+    text-align: center;
+    font-size: 1.6rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    appearance: textfield;
+    outline: none;
+	background:#FFFFFF
+  }
+  
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .plus,
+  .minus,
+  .plus2,
+  .minus2,
+  .plus3,
+  .minus3,
+  .plus4,
+  .minus4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    background: #DC9F96;
+    color: #FFFFFF;
+    border: none;
+    width: 31px;
+    height: 28px;
+    cursor: pointer;
+  }
+  
+  .plus,
+  .plus2,
+  .plus3,
+  .plus4 {
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  .minus,
+  .minus2,
+  .minus3,
+  .minus4 {
+    border-bottom-right-radius: 5px;
+    border-top: 1px solid #FFFFFF;
+  }
+  
+ /* Commander */
+
+ .formulaireCommande {
+	display: flex;
+	
+}
+
+.colonne1 {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin-right: 5%;
+}
+
+.vr {
+  border-left: 1px solid #FFFFFF;
+  height: auto;
+}
+
+.colonne2 {
+	display: flex;
+	flex-direction: column;
+	width: 45%;
+	margin-left: 5%;
+	
+}
+
+/* Ombre Accueil */
+
+
+#imgCanette {
+  box-shadow: #e3d9d0 0px 10px 0px;
+  border-bottom-left-radius: 50% 9%;
+  border-bottom-right-radius: 50% 9%;
+}
+
+
+
+
+/* Media query */
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  input[type="text"],
+  input[type="email"] {
+    width: 350px;
+  }
+
+  textarea {
+    width: 350px;
+  }
+
+  .meet-us-form {
+    width: 550px;
+  }
+
+  .quantity input[type="number"] {
+    width: 40px;
+  }
+
+  .quantity-form input[type="submit"] {
+    padding: 2rem 1.8rem;
+    margin-left: 0.6rem;
+  }
+
+  .order-form input[type="text"],
+  .order-form input[type="email"] {
+    width: 285px;
+  }
+
+  .order-form h3 {
+    font-size: 2.8rem;
+  }
+}
+
+/* MOBILE  */
+
+@media only screen and (max-width: 767px) {
+  input[type="text"],
+  input[type="email"] {
+    width: 300px;
+  }
+
+  textarea {
+    width: 300px;
+  }
+
+  .meet-us-form {
+    width: 400px;
+    background-size: 30%;
+  }
+	
+  .quantity input[type="number"] {
+    width: 75px;
+  }
+	
+	.quantity-form{
+	margin-left:60px;
+		margin-right:none;
+		justify-content: center;
+	}
+	
+  .quantity-form input[type="submit"] {
+    padding: 2rem 4rem;
+	  
+  }
+
+  .order-form input[type="text"],
+  input[type="email"] {
+    width: 300px;
+  }
+
+  .order-form h3 {
+    font-size: 2.6rem;
+  }
+
+   .formulaireCommande {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .vr {
+    display: none;
+  }
+
+  .form-right-column {
+    margin-top: 3rem;
+  }
+}

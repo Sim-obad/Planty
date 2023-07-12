@@ -49,3 +49,37 @@ Stack trace:
 [30-Jun-2023 13:59:33 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [30-Jun-2023 14:02:44 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
 [30-Jun-2023 15:17:06 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/functions.php on line 18
+[04-Jul-2023 10:21:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_schema_type() in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php:2
+Stack trace:
+#0 /Users/simon/Local Sites/planty/app/public/wp-includes/template.php(783): require_once()
+#1 /Users/simon/Local Sites/planty/app/public/wp-includes/template.php(718): load_template('/Users/simon/Lo...', true, Array)
+#2 /Users/simon/Local Sites/planty/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp/page.php(12): get_header()
+#4 /Users/simon/Local Sites/planty/app/public/wp-includes/template-loader.php(106): include('/Users/simon/Lo...')
+#5 /Users/simon/Local Sites/planty/app/public/wp-blog-header.php(19): require_once('/Users/simon/Lo...')
+#6 /Users/simon/Local Sites/planty/app/public/index.php(17): require('/Users/simon/Lo...')
+#7 {main}
+  thrown in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php on line 2
+[04-Jul-2023 10:23:39 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function oceanwp_schema_markup(), 0 passed in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php on line 2 and exactly 1 expected in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp/inc/helpers.php:4583
+Stack trace:
+#0 /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php(2): oceanwp_schema_markup()
+#1 /Users/simon/Local Sites/planty/app/public/wp-includes/template.php(783): require_once('/Users/simon/Lo...')
+#2 /Users/simon/Local Sites/planty/app/public/wp-includes/template.php(718): load_template('/Users/simon/Lo...', true, Array)
+#3 /Users/simon/Local Sites/planty/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#4 /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp/page.php(12): get_header()
+#5 /Users/simon/Local Sites/planty/app/public/wp-includes/template-loader.php(106): include('/Users/simon/Lo...')
+#6 /Users in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp/inc/helpers.php on line 4583
+[05-Jul-2023 13:24:35 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php on line 7
+[05-Jul-2023 13:30:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function blankslate_schema_type() in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php:2
+Stack trace:
+#0 /Users/simon/Local Sites/planty/app/public/wp-includes/template.php(783): require_once()
+#1 /Users/simon/Local Sites/planty/app/public/wp-includes/template.php(718): load_template('/Users/simon/Lo...', true, Array)
+#2 /Users/simon/Local Sites/planty/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#3 /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp/page.php(12): get_header()
+#4 /Users/simon/Local Sites/planty/app/public/wp-includes/template-loader.php(106): include('/Users/simon/Lo...')
+#5 /Users/simon/Local Sites/planty/app/public/wp-blog-header.php(19): require_once('/Users/simon/Lo...')
+#6 /Users/simon/Local Sites/planty/app/public/index.php(17): require('/Users/simon/Lo...')
+#7 {main}
+  thrown in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php on line 2
+[05-Jul-2023 14:18:26 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /Users/simon/Local Sites/planty/app/public/wp-content/themes/oceanwp-child/header.php on line 42
+[06-Jul-2023 08:15:49 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/simon/Local Sites/planty/app/public/wp-includes/update.php on line 447
